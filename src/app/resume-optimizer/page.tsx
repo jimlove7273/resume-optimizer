@@ -70,7 +70,7 @@ export default function ResumeOptimizer() {
     setActiveTab("output");
 
     try {
-      const res = await fetch("/api/optimize-resume", {
+      const res = await fetch("/api/optimize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ resumeText, jobDescription, tone }),
